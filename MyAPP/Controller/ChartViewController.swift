@@ -31,16 +31,6 @@ class ChartViewController: UIViewController {
         timeTitle.text = gettimeStamp()
         viewWidth = Int(self.view.frame.width)
         chartsHeight = Int(self.view.frame.height) / 2 - 50
-        
-        if let path = Bundle.main.path(forResource: "Category", ofType: "plist"),
-            let array = NSArray(contentsOfFile: path) {
-            // Use your myDict here
-            for case let category as NSDictionary in array {
-                categoryDict[category.object(forKey: "code") as! Int] = category.object(forKey: "name") as? String
-            }
-        }
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -91,6 +81,7 @@ class ChartViewController: UIViewController {
     
     func drawCharts() {
         showView.subviews.forEach({$0.removeFromSuperview()})
+        
         let eventCategoryChart = PieChartView(frame: CGRect(x: x, y: 100, width: viewWidth, height: chartsHeight))
         eventCategoryChart.noDataText = "沒有任何資料"
         if categoryEntries.count > 0 {

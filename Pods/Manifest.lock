@@ -1,0 +1,32 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - SnapKit (4.2.0)
+  - YYCalendar (1.3.3)
+
+DEPENDENCIES:
+  - Charts
+  - FMDB
+  - SnapKit (~> 4.2.0)
+  - YYCalendar
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - FMDB
+    - SnapKit
+    - YYCalendar
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  YYCalendar: 1a6bbbd2190392edf9209da898b029ce4e5e734b
+
+PODFILE CHECKSUM: f71a442f553625b96039fde16a032418925a4c99
+
+COCOAPODS: 1.8.4
